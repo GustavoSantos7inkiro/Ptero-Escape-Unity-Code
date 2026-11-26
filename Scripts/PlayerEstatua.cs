@@ -35,7 +35,7 @@ public class PlayerEstatua : MonoBehaviour
 
         if (InputModoEstatua()) // Se o botão para virar estátua foi pressionado
         {
-            // Use a propriedade pública IsPendurado aqui
+            
             if (!isEstatua && !player.IsPendurado)
             {
                 //  Impede virar estátua no ar
@@ -96,7 +96,7 @@ public class PlayerEstatua : MonoBehaviour
         animator.Play(estatuaAnimNames[poseIndex], 0, 0f); // Toca animação escolhida
     }
 
-    // Verifica se o input para entrar no modo estátua foi pressionado (tecla E ou botão joystick)
+    
     private bool InputModoEstatua()
     {
         return Input.GetKeyDown(KeyCode.S) || Input.GetButtonDown("EstatuaJoystick");
