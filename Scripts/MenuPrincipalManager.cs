@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems; // <- necessário para seleção
+using UnityEngine.EventSystems; // necessário para seleção
 
 public class MenuPrincipalManager : MonoBehaviour
 {
