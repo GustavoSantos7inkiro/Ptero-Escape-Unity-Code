@@ -287,7 +287,7 @@ public class Player : MonoBehaviour
 
     bool isRunButtonHeld = Input.GetButton("RunJoystick") || Input.GetKey(KeyCode.Z);
 
-    // 👉 Mostra ou oculta a barra de estamina com base no botão de correr
+    // Mostra ou oculta a barra de estamina com base no botão de correr
     if (staminaBarObject != null)
     staminaBarObject.SetActive(isRunButtonHeld && !playerEstatua.isEstatua && !isPendurado);
 
@@ -383,7 +383,7 @@ public class Player : MonoBehaviour
         return;
     }
 
-    // Corrigido: entrada combinada de teclado e joystick
+    // entrada combinada de teclado e joystick
     float inputJoystick = Input.GetAxisRaw("HorizontalJoystick");
     float inputKeyboard = Input.GetKey(KeyCode.RightArrow) ? 1f : (Input.GetKey(KeyCode.LeftArrow) ? -1f : 0f);
     float inputX = inputKeyboard != 0f ? inputKeyboard : inputJoystick;
